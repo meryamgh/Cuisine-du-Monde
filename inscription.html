@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="stylesite.css">
+<title>SITE WEB </title>
+<meta charset="UTF-8">
+<script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+<script language="javascript">function validateForm(){
+var x=document.getElementById("name").value;
+var y=document.getElementById("prenom").value;
+var a=document.getElementById("mdp1").value;
+var b=document.getElementById("mdp2").value;
+var mail=document.getElementById("username").value;
+var m=0;
+if (x== ""){
+document.getElementById("name").focus();
+document.getElementById("name").style.border="2px solid red";
+}
+if (x!= ""){
+document.getElementById("name").focus();
+document.getElementById("name").style.border="2px solid green";
+m=m+1;
+}
+
+if (y== ""){
+document.getElementById("prenom").focus();
+document.getElementById("prenom").style.border="2px solid red";
+
+}
+if (y!= ""){
+document.getElementById("prenom").focus();
+document.getElementById("prenom").style.border="2px solid green";
+m=m+1;
+}
+
+if (!mail.match(/^(([^<()[\]\\.,;:\s@\]+(\.[^<()[\]\\.,;:\s@\]+)*)|(.+))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/)){
+document.getElementById("username").focus();
+document.getElementById("username").style.border="2px solid red";
+
+}
+if (mail.match(/^(([^<()[\]\\.,;:\s@\]+(\.[^<()[\]\\.,;:\s@\]+)*)|(.+))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/)){
+document.getElementById("username").focus();
+document.getElementById("username").style.border="2px solid green";
+m=m+1;
+}
+
+if (a!=b){
+document.getElementById("mdp1").focus();
+document.getElementById("mdp2").focus();
+document.getElementById("mdp1").style.border="2px solid red";
+document.getElementById("mdp2").style.border="2px solid red";
+}
+if (a==b){
+if (a== ""){
+document.getElementById("mdp1").focus();
+document.getElementById("mdp2").focus();
+document.getElementById("mdp1").style.border="2px solid red";
+document.getElementById("mdp2").style.border="2px solid red";
+}
+if (a!= "") {
+
+document.getElementById("mdp1").focus();
+document.getElementById("mdp2").focus();
+document.getElementById("mdp1").style.border="2px solid green";
+document.getElementById("mdp2").style.border="2px solid green";
+m=m+1;
+}
+}
+
+if (m==4){
+alert("Votre profil a bien était enregistrer , nous vous souhaitons la bienvenue  " + y);
+}
+}
+
+</script>
+
+
+
+
+</head>
+<body class="hero">
+
+
+
+<form class="box">
+
+<h1 align="center">s'inscrire</h1>
+
+<input type="text" placeholder="ENTRER VOTRE NOM" id="name" >
+<input type="text" placeholder="ENTRER VOTRE PRENOM" id="prenom">
+<input type="text" placeholder="ADRESSE MAIL" id="username">
+<input type="password" placeholder="MOT DE PASSE" class="password" id="mdp1">
+<input type="password" placeholder="CONFIRMER LE MOT DE PASSE" class="password" id="mdp2">
+<input type="button" onclick="validateForm()" value="S'inscrire">
+<a href="espacedeconnexion.html">Se connecter</a>
+</form>
+
+</div>
+</body>
+</html>

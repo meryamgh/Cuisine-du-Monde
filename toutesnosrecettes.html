@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" type="text/css" href="rec.css"/>
+<title> RECETTES </title>
+<meta charset="UTF-8">
+<script type="text/javascript"> 
+ 
+
+var x=0 ;
+function compteur(id) 
+{ 
+
+x = x+1;
+ 
+if (x%2!=0){
+document.getElementById(id).style.color = 'red';
+} 
+else{
+document.getElementById(id).style.color = 'black';
+}
+}
+
+
+</script>
+<script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+
+</head> 
+
+<body align="center">
+
+<h1>Nos recettes</h1>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script>
+ $(document).ready(function(){     
+    //Dès qu'on clique sur #b1, on applique hide() au titre
+    $("#b1").click(function(){
+        $(".difficile").hide();
+		$(".moyen").hide();
+		$(".facile").show();
+		$("#b3").show();
+		
+    });
+	
+	
+	
+	$("#b2").click(function(){
+        $(".difficile").hide();
+		$(".facile").hide();
+		$(".moyen").show();
+		$("#b3").show();
+		
+    });
+	
+	$("#diff").click(function(){
+        $(".difficile").show();
+		$(".facile").hide();
+		$(".moyen").hide();
+		$("#b3").hide();
+		
+		
+    });
+	
+	
+	
+	$("#b3").click(function(){
+        $(".difficile").hide();
+		$(".moyen").hide();
+		$(".facile").hide();
+		$(".rapide .facile").show();
+		$(".rapide .moyen").show();
+    });
+    
+    //Dès qu'on clique sur #b1, on applique show() au titre
+    $("#a1").click(function(){
+        $(".difficile").show();
+		$(".moyen").show();
+		$(".facile").show();
+		$("#mer").hide();
+		
+    });
+	$("#impor").click(function(){
+        $("#mer").show();
+		
+		
+		
+    });
+	
+});
+</script>
+ 
+
+ <button id="impor">Filtres</button>
+ <table cellpadding="10" width="100%" align="center" id="mer">
+<tr> <td> Niveau de difficulté :
+<input type ="radio" name="df" value="FACILE" id="b1"> Facile
+<input type="radio"  name="df" value="moyen" id="b2" >Moyen
+<input type="radio"  name="df" value="difficile" id="diff">difficile</td></tr>
+<tr><td><button id="b3">rapide</button></td></tr>
+<tr><td><button id="a1">sans filtres</button></td></tr>
+
+</table>
+ 
+	
+		
+ 
+
+
+
+<table cellspacing="20" align="center" class="difficile" >
+</tr>
+<td align="center"  ><a href="pays/apple-pie-d-american-pie.html" target="_blank">  <img id="apple-pie-d-american-pie" src="pays/USA/apple-pie-d-american-pie.jpg" width="250px" height="250px"><br>Le gâteau à la pomme Américain</a><br><br><i id="a" onclick="fav('apple-pie-d-american-pie'),compteur('a')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/baklava-turque.html"target="_blank">  <img src="pays/TURQUIE/baklava-turque.jpg" width="250px" height="250px"><br>Baklava</a><br><br><i id="aa1" onclick="compteur('aa1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/bougatsa.html" target="_blank"><img src="pays/GRECE/Bougatsa.jpg" width="250px" height="250px"><br>Bougatsa</a><br><br><i id="gg1" onclick="compteur('gg1')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/tres-leches.html" target="_blank"> <img src="pays/MEXIQUE/tres-leches.jpg" width="250px" height="250px"><br>Gâteau aux 3 laits</a><br><br> <i id="aa3" onclick="compteur('aa3')"width="40px" class="far fa-heart fa-2x"></i> </td>
+</tr>
+<tr>
+<td align="center"><a href="pays/pp/gateaubananecotediv.html" target="_blank"><img src="pays/p/cote-d'ivoire/gateaubananecoco.jpg" width="250px" height="250px"><br>Gateau banane coco</a><br><br><i id="p" onclick="compteur('p')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/yokan_japon.html" target="_blank"><img src="pays/p/japon/yokan.jpg" width="250px" height="250px"><br>Yokan</a><br><br><i id="pp1" onclick="compteur('pp1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/tempura_japon.html"target="_blank"> <img src="pays/p/japon/tempura.jpeg" width="250px" height="250px"><br>Tempura</a><br><br><i id="pp2" onclick="compteur('pp2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/pates_japon.html"target="_blank">  <img src="pays/p/japon/pates.jpg" width="250px" height="250px"><br>Pates</a><br><br><i id="pp3" onclick="compteur('pp3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+
+
+
+<tr>
+<td align="center"><a href="pays/pp/himbasha_ethiopie.html" target="_blank"><img src="pays/p/ethiopie/himbasha.jpg" width="250px" height="250px"><br>Himbasha</a><br><br><i id="q" onclick="compteur('q')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/ngalakh_senegal.html" target="_blank"><img src="pays/p/senegal/ngalakh.jpg" width="250px" height="250px"><br>Ngalakh</a><br><br><i id="qq1" onclick="compteur('qq1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/mafé_senegal.html"target="_blank"> <img src="pays/p/senegal/Mafé.jpg" width="250px" height="250px"><br>Mafé</a><br><br><i id="qq2" onclick="compteur('qq2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/nekiri_japon.html"target="_blank"><img src="pays/p/japon/nekiri.jpg" width="250px" height="250px"><br>Nekiri</a><br><br><i id="qq3" onclick="compteur('qq3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+
+</table>
+
+<table cellspacing="20" align="center" class="moyen">
+<tr>
+<td align="center"><a href="pays/tacos.html"  target="_blank">  <img src="pays/MEXIQUE/tacos.jpg" width="250px" height="250px"><br>Tacos</a><br><br><i id="b" onclick="compteur('b')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/lahmacun.html" target="_blank">  <img src="pays/TURQUIE/lahmacun.jpg" width="250px" height="250px"><br>Lahmacun</a><br><br><i id="bb1" onclick="compteur('bb1')" width="40px" class="far fa-heart fa-2x"></i>  </td>
+<td align="center"><a href="pays/gozleme.html" target="_blank"><img  src="pays/TURQUIE/gozleme.jpg" width="250px" height="250px"><br>Gozleme</a><br><br><i id="bb2" onclick="compteur('bb2')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/osso-bucco.html" target="_blank"> <img src="pays/ITALIE/osso-bucco.jpg" width="250px" height="250px"><br>Osso-bucco</a><br><br><i id="bb3" onclick="compteur('bb3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+<tr>
+<td align="center"><a href="pays/feuilles-de-vignes.html" target="_blank"> <img src="pays/GRECE/feuilles-de-vignes.jpg" width="250px" height="250px"><br>Feuilles de vignes</a><br><br><i id="c" onclick="compteur('c')" width="40px" class="far fa-heart fa-2x"></i>  </td>
+<td align="center"><a href="pays/galaktoboureko.html" target="_blank"><img src="pays/GRECE/galaktoboureko.jpg" width="250px" height="250px"><br>Galaktoboureko</a><br><br><i id="cc1" onclick="compteur('cc1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pommes-de-terre-au-citron-fete-menthe.html" target="_blank"><img src="pays/GRECE/Pommes-de-terre-au-citron-feta-menthe.jpg" width="250px" height="250px"><br>Pommes de terre au citron feta menthe</a><br><br><i id="cc2" onclick="compteur('cc2')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/panna-cotta.html" target="_blank">  <img src="pays/ITALIE/panna-cotta.jpg" width="250px" height="250px"><br>Panna-cotta</a><br><br><i id="cc3"  onclick="compteur('cc3')" width="40px" class="far fa-heart fa-2x"></i> </td>
+</tr>
+
+<tr>
+<td align="center"><a href="pays/pp/gateaubananecotediv.html" target="_blank"><img src="pays/p/cote-d'ivoire/gateaubananecoco.jpg" width="250px" height="250px"><br>Gateau banane coco</a><br><br><i id="p" onclick="compteur('p')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/yokan_japon.html" target="_blank"><img src="pays/p/japon/yokan.jpg" width="250px" height="250px"><br>Yokan</a><br><br><i id="pp1" onclick="compteur('pp1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/tempura_japon.html"target="_blank"> <img src="pays/p/japon/tempura.jpeg" width="250px" height="250px"><br>Tempura</a><br><br><i id="pp2" onclick="compteur('pp2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/pates_japon.html"target="_blank">  <img src="pays/p/japon/pates.jpg" width="250px" height="250px"><br>Pates</a><br><br><i id="pp3" onclick="compteur('pp3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+
+
+
+<tr>
+<td align="center"><a href="pays/pp/himbasha_ethiopie.html" target="_blank"><img src="pays/p/ethiopie/himbasha.jpg" width="250px" height="250px"><br>Himbasha</a><br><br><i id="q" onclick="compteur('q')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/ngalakh_senegal.html" target="_blank"><img src="pays/p/senegal/ngalakh.jpg" width="250px" height="250px"><br>Ngalakh</a><br><br><i id="qq1" onclick="compteur('qq1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/mafé_senegal.html"target="_blank"> <img src="pays/p/senegal/Mafé.jpg" width="250px" height="250px"><br>Mafé</a><br><br><i id="qq2" onclick="compteur('qq2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/nekiri_japon.html"target="_blank"><img src="pays/p/japon/nekiri.jpg" width="250px" height="250px"><br>Nekiri</a><br><br><i id="qq3" onclick="compteur('qq3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+</table>
+
+</table>
+
+
+<div class="rapide">
+<table cellspacing="20" align="center"  class="moyen" >
+<tr>
+
+<td align="center"><a href="pays/macaron.html" target="_blank"> <img src="pays/FRANCE/macaron.jpg" width="250px" height="250px"><br>Macaron</a><br><br><i id='d' onclick="compteur('d')" width="40px" class="far fa-heart fa-2x"></i>  </td>
+<td align="center"><a href="pays/parisbrest.html" target="_blank"> <img src="pays/FRANCE/parisbrest.jpg" width="250px" height="250px"><br>Parisbrest</a><br><br><i id="dd1" onclick="compteur('dd1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/tartiflette.html" target="_blank"><img src="pays/FRANCE/tartiflette.jpg" width="250px" height="250px" ><br>Tartiflette</a><br><br><i id="dd2" onclick="compteur('dd2')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/quiche-lorraine.html" target="_blank"> <img src="pays/FRANCE/Quiche-lorraine.jpg" width="250px" height="250px"><br>Quiche lorraine</a><br><br><i id="dd3" onclick="compteur('dd3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+<tr>
+<td align="center"><a href="pays/pizza-napolitaine.html" target="_blank"><img src="pays/ITALIE/pizza-napolitaine.jpg" width="250px" height="250px"><br>Pizza Napolitaine</a><br><br><i id="e" onclick="compteur('e')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/coxhinas.html" target="_blank"><img src="pays/BRESIL/coxinhas.jpg" width="250px" height="250px"><br>Coxinhas</a><br><br><i id="ee1" onclick="compteur('ee1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/quindim.html" target="_blank"><img src="pays/BRESIL/quindim.jfif" width="250px" height="250px"><br>Quindim</a><br><br><i id="ee2" onclick="compteur('ee2')" width="40px" class="far fa-heart fa-2x"></i>  </td>
+<td align="center"><a href="pays/cocado.html" target="_blank"><img src="pays/BRESIL/cocado.jpg" width="250px" height="250px"><br>Cocado</a><br><br><i id="ee3" onclick="compteur('ee3')" width="40px" class="far fa-heart fa-2x"></i> </td>
+</tr>
+
+
+<tr>
+<td align="center"><a href="pays/pp/attiéké.html" target="_blank"><img src="pays/p/cote-d'ivoire/attiéké.png" width="250px" height="250px"><br>Attiéké</a><br><br><i id="l" onclick="compteur('l')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/padthai_thailande.html" target="_blank"><img src="pays/p/thailande/padthai.jpg" width="250px" height="250px"><br>Padthai</a><br><br><i id="ll1" onclick="compteur('ll1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/khaotommad_thailande.html"target="_blank"> <img src="pays/p/thailande/khaotommad.jpg" width="250px" height="250px"><br>Khaotommad</a><br><br><i id="ll2" onclick="compteur('ll2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/tiakriananas_senegal.html"target="_blank">  <img src="pays/pp/img/tiakriananas_senegal.jpg" width="250px" height="250px"><br>Tiakriananas</a><br><br><i id="ll3" onclick="compteur('ll3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+
+
+<tr>
+<td align="center"><a href="pays/pp/gharba.html" target="_blank"><img src="pays/p/cote-d'ivoire/gharba.jfif" width="250px" height="250px"><br>Gharba</a><br><br><i id="m" onclick="compteur('m')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/img/gateaulune_chine.html" target="_blank"><img src="pays/pp/img/gateaulune_chine.jpg" width="250px" height="250px"><br>Gâteau de Lune</a><br><br><i id="mm1" onclick="compteur('mm1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/couss.html"target="_blank"> <img src="pays/p/algerie/couscous.jpg" width="250px" height="250px"><br>Couscous</a><br><br><i id="mm2" onclick="compteur('mm2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/wat_ethiopien.html"target="_blank">  <img src="pays/p/ethiopie/wat.jfif" width="250px" height="250px"><br>Wat</a><br><br><i id="mm3" onclick="compteur('mm3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+
+
+<tr>
+<td align="center"><a href="pays/pp/beignetscotediv.html" target="_blank"><img src="pays/p/cote-d'ivoire/beignets.jfif" width="250px" height="250px"><br>Beignets</a><br><br><i id="o" onclick="compteur('o')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/tej_ethiopie.html" target="_blank"><img src="pays/pp/img/tej_ethiopie.jpg" width="250px" height="250px"><br>Tej</a><br><br><i id="oo1" onclick="compteur('oo1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/injera_ethiopie.html"target="_blank"> <img src="pays/p/ethiopie/injera.jfif" width="250px" height="250px"><br>Injera</a><br><br><i id="oo2" onclick="compteur('oo2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/thiéboudienne_senegal.html" target="_blank">  <img src="pays/p/senegal/Thieboudienne.jpg" width="250px" height="250px"><br>Thieboudienne</a><br><br><i id="oo3" onclick="compteur('oo3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+</table>
+</div>
+
+
+
+<table cellspacing="20" align="center" class="facile"  >
+<tr>
+<td align="center"><a href="pays/crevette.html" target="_blank"> <img src="pays/BRESIL/crevette.jpg" width="250px" height="250px"><br>Crevette à la Brésilienne</a><br><br><i id="f" onclick=compteur('f')"width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/paella.html" target="_blank"> <img src="pays/ESPAGNE/paella.jpg" width="250px" height="250px"><br>Paella</a><br><br><i id="ff1" onclick="compteur('ff1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/ensaimada.html" target="_blank"><img  src="pays/ESPAGNE/Ensaimada.jpg" width="250px" height="250px"><br>Ensaimada</a><br><br><i id="ff2" onclick="compteur('ff2')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/creme-catalane.html" target="_blank"><img src="pays/ESPAGNE/creme-catalane.jpg" width="250px" height="250px"><br>Crème Catalane</a><br><br><i id="ff3" onclick="compteur('ff3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+
+<tr>
+<td align="center"><a href="pays/pp/ludougao_chine.html" target="_blank"><img src="pays/p/chine/ludougao.jpg" width="250px" height="250px"><br>Ludougao</a><br><br><i id="i" onclick="compteur('i')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/kelblouz.html" target="_blank"><img src="pays/p/algerie/kelblouz.jpeg" width="250px" height="250px"><br>Kelblouz</a><br><br><i id="ii1" onclick="compteur('ii1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/tajinecrevettes.html"target="_blank"> <img src="pays/p/algerie/tajine-crevette.jpg" width="250px" height="250px"><br>Tajine aux crevettes</a><br><br><i id="ii2" onclick="compteur('ii2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/dimlama_uzbekistan.html"target="_blank">  <img src="pays/p/uzbekistan/dimlama.jpg" width="250px" height="250px"><br>Dimlama</a><br><br><i id="ii3" onclick="compteur('ii3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+
+<tr>
+<td align="center"><a href="pays/pp/tofu_chine.html" target="_blank"><img src="pays/p/chine/tofu.jpg" width="250px" height="250px"><br>Tofu</a><br><br><i id="j" onclick="compteur('j')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/crepemilletrous.html" target="_blank"><img src="pays/p/algerie/crepemilletrous.jpeg" width="250px" height="250px"><br>Crêpe-milles-trous</a><br><br><i id="jj1" onclick="compteur('jj1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/gateauplat_ouzbekistan.html"target="_blank"> <img src="pays/p/uzbekistan/gateauplat.jpg" width="250px" height="250px"><br>Gateauplat</a><br><br><i id="jj2" onclick="compteur('jj2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/lagman_uzbekistan.html"target="_blank">  <img src="pays/p/uzbekistan/lagman.jpg" width="250px" height="250px"><br>Lagman</a><br><br><i id="jj3" onclick="compteur('jj3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+
+<tr>
+<td align="center"><a href="pays/pp/pouletimperial_chine.html" target="_blank"><img src="pays/p/chine/pouletimperial.jpg" width="250px" height="250px"><br>Poulet impérial</a><br><br><i id="k" onclick="compteur('k')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/pp/tchaktchak_uzbekistan.html" target="_blank"><img src="pays/p/uzbekistan/tchaktchak.jpg" width="250px" height="250px"><br>Tchaktchak</a><br><br><i id="kk1" onclick="compteur('kk1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/khaoniao_thailande.html"target="_blank"> <img src="pays/p/thailande/khaoniao.jpg" width="250px" height="250px"><br>Khaoniao</a><br><br><i id="kk2" onclick="compteur('kk2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/pp/somtam_thailande.html"target="_blank">  <img src="pays/p/thailande/somtam.jpg" width="250px" height="250px"><br>Somtam</a><br><br><i id="kk3" onclick="compteur('kk3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+</table>
+
+
+
+<div class="rapide">
+<table cellspacing="20" align="center" class="facile">
+<tr><td align="center"><a href="pays/chilaquiles.html"target="_blank"> <img  src="pays/MEXIQUE/chilaquiles.jpg" width="250px" height="250px" ><br>Chilaquiles</a><br><br><i id="g" onclick="compteur('g')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/kabak-talisi.html" target="_blank">  <img src="pays/TURQUIE/kabak_tatlisi.jpg" width="250px" height="250px"><br>Kabak tatlisi</a><br><br><i id="aa2" onclick="compteur('aa2')"width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/tiramisu.html"  target="_blank"><img src="pays/ITALIE/tiramisu.jpg" width="250px" height="250px"><br>Tiramisu</a><br><br><i id="gg2" onclick="compteur('gg2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/empanadas.html" target="_blank"><img src="pays/ESPAGNE/empanadas.jpg" width="250px" height="250px"><br>Empanadas</a><br><br><i id="gg3" onclick="compteur('gg3')" width="40px" class="far fa-heart fa-2x"></i>  </td>
+</tr>
+<tr>
+<td align="center"><a href="pays/sopaipillas.html" target="_blank"><img src="pays/MEXIQUE/sopaipillas.jpg" width="250px" height="250px"><br>Sopaipillas</a><br><br><i id="h" onclick="compteur('h')" width="40px" class="far fa-heart fa-2x"></i> </td>
+<td align="center"><a href="pays/cheeseburger.html" target="_blank"><img src="pays/USA/cheeseburger.jpg" width="250px" height="250px"><br>Cheeseburger</a><br><br><i id="hh1" onclick="compteur('hh1')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/mac-cheese.html"target="_blank"> <img src="pays/USA/mac-cheese.jpg" width="250px" height="250px"><br>Mac and cheese</a><br><br><i id="hh2" onclick="compteur('hh2')" width="40px" class="far fa-heart fa-2x"></i></td>
+<td align="center"><a href="pays/salade-de-pommes-de-terre.html"target="_blank">  <img src="pays/USA/salade-de-pommes-de-terre.jpg" width="250px" height="250px"><br>Salade de pomme de terre</a><br><br><i id="hh3" onclick="compteur('hh3')" width="40px" class="far fa-heart fa-2x"></i></td>
+</tr>
+</table>
+</div>
+
+
+</body>
+</html>
+ 
+ 
+ 

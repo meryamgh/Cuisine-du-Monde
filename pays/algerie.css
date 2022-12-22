@@ -1,0 +1,22 @@
+
+body{
+	background-color:#FFE8D7;
+	}
+h1{
+	
+	font-size:50px;
+	
+	
+}
+
+.divHeader {
+	position: fixed;bottom: 10;text-align:center;
+	}
+
+#rec{
+	margin-top:10vh;
+	text-align=center;
+	padding=2;
+}
+#entete{
+	

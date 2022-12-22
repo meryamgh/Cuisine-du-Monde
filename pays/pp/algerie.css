@@ -1,0 +1,65 @@
+body{
+	background: url(img/header-section.jpg) no-repeat fixed;
+	color: white;
+	margin :0 auto; /* pour que l'ecriture dans les divs ne soit pas collées a la marge */ 
+}
+
+header{
+	display:flex;
+	justify-content: center; /* centrer le header horizontalement */
+	flex-direction : column; /* centrer le header verticalement */
+	align-items:center;
+	
+}
+
+header img{
+	height : 200px;  /* taille de la balise img qui est dans le header */
+}
+
+section#about{
+	display:flex; /* tt ce qu'il a dans l'affichage de cette section peut utiliser les flexboxs */ 
+	justify-content: center; /* on centre les images de la section */ 
+	align-items: center; 
+	background: grey;
+	
+}
+ section#about div {  /* dans la section on va modifier les div */
+	height:150px; /* on modifie la taille des images */
+	display:flex; /* ça devient une flexbox sur le type d'affichage */ 
+	justify-content: center; 
+	align-items: center; 
+	flex: 1; /* chaque element va avoir le max de taille disponible */ 
+ }
+ 
+ section#about div h3{
+	font-size: 30px; 
+ }
+
+	
+/* je vais creer des classes pour chaque div de cette section */ 
+
+
+.salt{background: url(img/2.jpg);}
+.sugar{background: url(img/3.jpg);}
+
+
+/* pour les recettes salées */ 
+section#recettes {
+	margin:20%;
+}
+	
+	
+section#recettes img{
+	height:300px;
+	width:350px;
+}
+
+/* pour le pied de page */
+footer{
+	text-align:center;
+	font-weight:bold;
+	color:white;
+	font-size:18px;
+}
+
+

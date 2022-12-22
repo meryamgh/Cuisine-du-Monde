@@ -1,0 +1,22 @@
+
+body{
+	background-color:#FFE8D7;
+	}
+h1{
+	
+	font-size:100px;
+}
+.pays{
+	background-color:red;
+	margin-top:0%;
+}
+.divHeader {
+	position: fixed;bottom: 20;text-align:center;
+	}
+.drapeau{
+	margin-bottom:20px;
+}
+table{
+	text-align=center;
+	padding=2;
+}

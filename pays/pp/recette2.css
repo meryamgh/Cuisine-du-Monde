@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=EB+Garamond:wght@800&family=Merienda:wght@700&family=PT+Serif:ital@1&family=Sofadi+One&display=swap');
+
+body{
+margin: 20px 150px 20px 150px;
+background-color:#FFE8D7 ;
+color:black;
+font-size:20px;
+font-family: 'Lobster Two', cursive;
+}
+
+h1{
+font-size: 30px;
+color:Brown;
+font-family:'Sofadi One', cursive;
+
+
+}
+h2{
+color:brown;
+font-family:'Sofadi One', cursive;
+text-decoration: brown underline overline;
+
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  height:100%
+  border-collapse: collapse;
+  border: 3px solid brown;
+}
+
+
+.parag1{
+text-align:left;
+border-radius: 30px;
+margin-left: 9px;
+margin-right: 10px;
+margin-top:0px;
+}
+
+
+td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 50px;
+}
+ul li{
+list-style-image:url(c.png);
+
+}
+ol{
+list-style-type: I;
+}
